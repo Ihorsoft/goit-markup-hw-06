@@ -30,7 +30,7 @@ img {
     margin-left: 0;
     margin-right: 0;
    /* width: 1158px;*/
-    width:320px;
+    width: 320px;
     margin: 0 auto;
 }
 
@@ -150,11 +150,11 @@ img {
 .hero {
     margin: 0 auto;
    /* max-width: 1440px;*/
-   max-width: 320px; 
+    max-width: 320px; 
  /*  max-height: auto; */
     background-color: #2E2F42;
   /* padding: 188px 0; */
-  padding: 72px 0;
+    padding: 72px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -483,22 +483,42 @@ img {
 
 
 .footer {
+  /*  width: 100%; */
+  /*  margin: 0 auto;*/  /* mobile*/
+max-width: 320px;
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 0;
+    margin: 0 auto;
+      
+  /*  padding: 100px 0; decktop */
+   /* padding: 96px; 16px;
+    max-width: 320px;
+    min-width: 169px;*/ /* mobile*/
+   /* max-height: auto;*/
+    
 }
 
 .footer-parent {
     display: flex; 
-    align-items: baseline;
+  /*  align-items: baseline; */ /* decktop*/ 
+ /* align-items: center;*/ /* mobile*/
+   row-gap: 48px; /* for mobile*/
+   flex-wrap: wrap; /* mobile*/
+   padding: 96px 16px;
+  /*  max-width: 320px;
+    min-width: 169px;*/ /* mobile*/
+
+   
 }
 
 .footer-main {
-    margin-right: 120px;
-
+  /*  margin-right: 120px; decktop */
+ /* display:flex;*/
+ width: 100%;
 }
 
 .footer-link {
+    width: 100%; /* mobil*/
         display: inline-block; 
         color: #4D5AE5;
         font-family: "Raleway", sans-serif ;
@@ -508,25 +528,36 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 16px;
+        justify-content: center;
+        align-items: center;
+       /* margin: auto;*/
+        /*  align-items: center;*/
+                  
 }
 
 .logo-footer {
     color: #F4F4FD;
+   
 }
 
 .footer-text {
-      max-width: 264px;
+    /* width: 100%;*/ /*mobil*/
       color: #F4F4FD;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: 0.02em;
+     /* text-align: center; */  /* mobil*/
+   /* width: 100%;*/
+   
      
 }
 
 .social-media {
-     margin-right: auto;
-  }
+     /*margin-right: auto; decktop */
+    /* margin: 0 auto;*/
+    width: 100%;
+ }
 
 .social-title {
         color: #FFFFFF;
@@ -535,11 +566,13 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
-}
+        text-align: center; /* mobil*/
+
+       }
 
 .social-list {
     display: flex;
-    max-width: 264px;
+   /* max-width: 264px; del  mobil*/
     justify-content: center;
     gap: 16px; 
 }
@@ -569,6 +602,13 @@ img {
     background-color: #31D0AA ;
 }
 
+.footer-subskribe-main {
+    width: 100%;
+}
+
+
+
+
 .footer-email-sub {
         border: 1px solid ;
         border-radius: 4px;
@@ -582,7 +622,8 @@ img {
 }
 
 .footer-input {
-    width: 264px;
+   /* display:inline-block; */ /* mobile*/
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 4px;
@@ -593,6 +634,10 @@ img {
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
+    align-items: center;
+  /*  margin: 0 auto; */
+  /*  margin:0 auto; */
+
 }
 
 .footer-input:hover, .footer-input:focus {
@@ -603,7 +648,10 @@ img {
 
 .footer-form {
              display:flex;
-            gap: 24px;
+           /* gap: 24px; decktop*/
+           row-gap: 48px;
+           flex-wrap: wrap;
+          
 }          
 
 .footer-agree-button {
@@ -967,6 +1015,46 @@ input {
                 .hero-button {
                     margin-top: 0;
                 }
+
+       
+        .footer {
+           max-width: 768px;
+
+        }   
+        
+        
+        .footer-parent {
+            gap: 48px 24px;
+            align-items: baseline;
+        }
+
+        .footer-main {
+            width: calc((100% - 24px) /2);
+        }
+        /*.footer-parent {
+            gap: 48px 24px;
+        }
+
+        .footer-link {
+            
+        }
+
+                .footer-text {
+                width: calc((100% - 24px) /2);
+                }*/
+
+        .social-media {
+                   width: calc((100% - 24px) /2);
+
+        }
+
+        .social-title {
+            text-align: left;
+        }
+
+        .social-list {
+            justify-content: left;
+        }
 }
 
 
