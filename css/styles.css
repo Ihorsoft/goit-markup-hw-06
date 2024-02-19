@@ -504,7 +504,7 @@ max-height: 664px;
   /*  align-items: baseline; */ /* decktop*/ 
  /* align-items: center;*/ /* mobile*/
    row-gap: 48px; /* for mobile*/
-   flex-wrap: wrap; /* mobile*/
+  flex-wrap: wrap; /* mobile*/
    padding: 96px 16px;
   /*  max-width: 320px;
     min-width: 169px;*/ /* mobile*/
@@ -955,7 +955,7 @@ input {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agree-button:hover, .agree-button:focus {
-    background-color: #404BBF;
+        background-color: #404BBF;
 }
 
 /*=======================================*/
@@ -964,30 +964,32 @@ input {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+             width: 768px;
     }
+
     .portfolio-item {
-        width: calc((100% - 24px) / 2); 
+            width: calc((100% - 24px) / 2); 
     }
+
     .portfolio-list {
             display: flex;
             gap: 72px 24px; 
             flex-basis: calc((100% - 24px) / 2); 
             flex-wrap: wrap;
-        }
+    }
 
       /*======= team=============*/
       
-          .team-item {
+        .team-item {
               width: calc((100% - 24px) / 2);
-          }
+        }
         
-          .team-list {
-                   display: flex;
-                   gap: 72px 24px;
-                   flex-wrap: wrap;
-                   flex-basis: calc((100% - 24px) / 2);
-          }
+        .team-list {
+                      display: flex;
+                      gap: 72px 24px;
+                      flex-wrap: wrap;
+                      flex-basis: calc((100% - 24px) / 2);
+         }
 
         .service-item {
                       width: calc((100% - 24px) / 2);
@@ -998,6 +1000,7 @@ input {
                       gap: 24px;
                       flex-basis: calc((100% - 72px) / 3);
         }
+
         .hero {
                max-width: 768px;
                max-height: 436px;
@@ -1012,67 +1015,53 @@ input {
                         line-height: 107%;
                         font-size: 56px;
                         line-height: 107%;
-          
         }
-                .hero-button {
-                    margin-top: 0;
-                }
 
-       
+        .hero-button {
+                    margin-top: 0;
+        }
+
+ /*============================= footer 768================ */      
+        
         .footer {
            max-width: 768px;
            max-height: 456px;
         }   
-        
-        
+                
         .footer-parent {
             gap: 48px 24px;
             align-items: baseline;
+            padding: 96px 108px;
         }
 
         .footer-main {
             width: calc((100% - 24px) /2);
             text-align: left;
         }
-        /*.footer-parent {
-            gap: 48px 24px;
-        }
-
-        .footer-link {
-            
-        }
-
-                .footer-text {
-                width: calc((100% - 24px) /2);
-                }*/
-
+        
         .social-media {
                    width: calc((100% - 24px) /2);
-
         }
 
         .social-title {
-            text-align: left;
+                  text-align: left;
         }
 
         .social-list {
-            justify-content: left;
+                  justify-content: left; 
         }
 
         .footer-agree-button {
-            justify-content: left;
-                /* не оюовязково*/
-               
+                  margin-left: 24px; 
+                  margin-right: 0;
         }
 
         .modal-label-footer {
-            justify-content: flex-start;
-                /* не оюовязково*/
-              
+           
         }
 
         .footer-form {
-            justify-content: flex-start;
+         
         }
 }
 
@@ -1082,6 +1071,7 @@ input {
 
 
 @media screen and (min-width: 1158px) {
+    
     .container {
         width: 1158px;
     }
@@ -1098,44 +1088,41 @@ input {
     }
 
     .team-item {
-        width: calc((100% - 72px) / 4);
-         }
-    .team-list {
-          /*  display: flex;
-            gap: 72px 24px;
-            flex-wrap: wrap;*/
-            flex-basis: calc((100% - 72px) / 4);
-        }
+                     width: calc((100% - 72px) / 4);
+    }
 
-        .service-item {
-            width: calc((100% - 72px) / 4);
+    .team-list {
+                   flex-basis: calc((100% - 72px) / 4);
+    }
+
+    .service-item {
+                    width: calc((100% - 72px) / 4);
     
-        }
-        .service-list {
+    }
+
+    .service-list {
                     display: flex;
                     gap: 24px;
-        }
+    }
 
-        .icon-service-box {
-          /*  visibility: visible; */
-         /*   overflow: none;*/
-           display: flex;
-        }
+    .icon-service-box {
+                    display: flex;
+    }
 
-        .service-subtitle {
+    .service-subtitle {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 120%;
                 letter-spacing: 0.02em;
-        } 
+    } 
         
-        .hero {
+    .hero {
                      max-width: 1440px;
                      max-height: 600px;
                      padding: 188px 0;
-        }
+    }
         
-        .hero-title {
+    .hero-title {
                      max-height: 160px;
                      margin-bottom: 48px;
                      font-size: 56px;
@@ -1143,9 +1130,53 @@ input {
                      font-size: 56px;
                      line-height: 107%;
         
+    }
+        
+    .hero-button {
+                     margin-top: 0;
+    }
+/*======================================================*/
+/*======================= footer 1158 =======================*/
+
+
+
+        .footer {
+                     max-width: 1158px;
+                     max-height: 312px;
+        }
+
+        .footer-parent {
+                     gap: 24px;
+                     align-items: baseline;
+                     flex-wrap: nowrap;
+                     padding: 100px 24px;
+        }
+
+        .footer-main {
+                    max-width: 100%;
+        }
+
+        .footer-text {
+                    max-width: 264px;
+        }
+
+        .social-media {
+                   max-width: 100%;
+        }
+
+        .social-list {
+                   max-width: 208px; 
+        }
+
+        .footer-form {
+                   gap: 24px; 
+        }
+
+        .footer-input {
+                   max-width: 264px;
         }
         
-        .hero-button {
-                     margin-top: 0;
+        .footer-agree-button {
+                    margin-right: 0;
         }
 }
