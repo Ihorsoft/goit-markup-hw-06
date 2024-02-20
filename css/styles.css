@@ -47,6 +47,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* mobile */
 }
 
 .header-navigation {
@@ -63,7 +64,8 @@ img {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin-right: 76px;
+       /* margin-right: 76px;  decktop */
+        padding: 17px 0;      /* mobile*/
 }
 
 .logo-part {
@@ -71,8 +73,7 @@ img {
 }
 
 .nav-menu {
-    display: flex;
-    gap: 40px;
+  display: none; 
 }  
 
 .nav-link {
@@ -116,10 +117,11 @@ img {
 }
 
 .address-item {
-    display: flex;
-    align-items: center;
+    display: none;
+  /*  display: flex; decktop */
+   /* align-items: center;
     gap: 40px;
-    padding: 24px 0;
+    padding: 24px 0; decltop */
 }
 
 .address-link {
@@ -134,6 +136,15 @@ img {
 .address-link:hover, .address-link:focus {
     color: #404BBF;
 }
+
+.open-menu-btn {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        line-height: 0;
+        cursor: pointer;
+}
+
 
 .section {
   /* padding: 120px 0; del for mobile*/
@@ -958,6 +969,9 @@ input {
         background-color: #404BBF;
 }
 
+
+
+
 /*=======================================*/
 /*==========  media 768 =====================*/
 
@@ -1063,9 +1077,51 @@ input {
         .footer-form {
          
         }
+
+/*============== header 758 =================*/
+
+ .logo {
+     margin-right: 120px;
+ }
+
+ .nav-menu {
+     display: flex;
+     gap: 40px;
+ }
+
+.nav-link {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+ .open-menu-btn {
+     display: none;
+ }
 
+ .address-item {
+     display: block;
+ }
+
+ .address-link {
+
+     font-size: 12px;
+     line-height: 1.16;
+
+ }
+
+ .address-item {
+     display: flex;
+     gap: 12px;
+     flex-direction: column;
+ }
+
+}
 /*===========================================*/
 /*=============================================  1158  =====================*/
 
@@ -1135,8 +1191,13 @@ input {
     .hero-button {
                      margin-top: 0;
     }
-/*======================================================*/
-/*======================= footer 1158 =======================*/
+
+     
+
+
+   
+      /*======================================================*/
+      /*======================= footer 1158 =======================*/
 
 
 
@@ -1179,4 +1240,37 @@ input {
         .footer-agree-button {
                     margin-right: 0;
         }
+   /*================  header ======================*/
+
+   .logo {
+    margin-right: 76px;
+   }
+
+   .address-item {
+    
+         display: flex;  
+         flex-direction: row;
+           /* align-items: center;*/
+         gap: 40px;
+           /* padding: 24px 0; decltop */
+   }
+
+   .address-link {
+       font-size: 16px;
+       line-height: 1.5;
+   }  
+}
+
+
+
+
+
+
+
+
+/*==================== dpi ======================*/
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: url(../images/people-office@2x.jpg);
+    }
 }
