@@ -151,13 +151,11 @@ img {
   padding: 96px 0; /* add for mobile*/
 }
 
-/*==============================*/
+/*================= end header  =============*/
 
 /*=============== mobil-menu ===========================*/
 
-.main-padd {
-    
-}
+
 
 .mob-menu-backdrop {
     position: fixed;
@@ -171,7 +169,7 @@ img {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    position: none;
+   /* position: none;*/
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -182,7 +180,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     min-height: 584px;
-    width: 408px;
+    max-width: 320px;
     background-color: #fcfcfc;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -191,10 +189,10 @@ img {
     padding: 72px 24px 40px 16px;
 }
 
-.mobil-menu-container {
+.mob-menu-container {
     
 }
-.mobil-menu-navigation {
+.mob-menu-navigation {
     display:block;
     margin-bottom: 168px;
 
@@ -828,7 +826,7 @@ max-height: 664px;
 
 }
 
-/*===============================*/
+/*===========  end footer  ====================*/
 /*========== modal ========================*/
 
 
@@ -860,14 +858,17 @@ max-height: 664px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-height: 584px;
-    width: 408px;
+    /* min-height: 584px; decktop */
+    min-height: 640px; /* mobil*/
+    /* width: 408px; decktop*/
+    max-width: 320px;    /* mobil */ 
     background-color: #fcfcfc;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 72px 24px 24px 24px; 
+    /* padding: 72px 24px 24px 24px;  decktop */
+    padding: 72px 16px 24px 16px;
 }
     
 .modal-close-btn {
@@ -1255,8 +1256,21 @@ input {
 
  /*---------------------------------------------------*/
 
-}
+  /*======= modal 768 =====================*/
 
+  .modal {
+    min-height: 584px;
+       
+      min-width: 408px; 
+      
+       
+    padding: 72px 24px 24px 24px;
+  }
+
+  /*--------end modal 768 ---------------*/
+
+}
+  
 
 /*===========================================*/
 /*=============================================  1158  =====================*/
