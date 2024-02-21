@@ -1195,8 +1195,8 @@ input {
  /*============================= footer 768================ */      
         
         .footer {
-           max-width: 768px;
-           max-height: 456px;
+          /* max-width: 768px;
+           max-height: 456px; mentor  */
         }   
                 
         .footer-parent {
@@ -1381,8 +1381,8 @@ input {
 
 
         .footer {
-                     max-width: 1158px;
-                     max-height: 312px;
+                   /*  max-width: 1158px;
+                     max-height: 312px; mentor */
         }
 
         .footer-parent {
